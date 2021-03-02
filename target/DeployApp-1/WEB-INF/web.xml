@@ -128,22 +128,12 @@
     <servlet-name>CookieInfoRemastered</servlet-name>
     <url-pattern>/CookieInfoRemastered</url-pattern>
   </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>ServletRequestListener</display-name>
-    <servlet-name>ServletRequestListener</servlet-name>
-    <servlet-class>listeners.ServletRequestListener</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>ServletRequestListener</servlet-name>
-    <url-pattern>/ServletRequestListener</url-pattern>
-  </servlet-mapping>
 <servlet>
     <servlet-name>ExtendedDemoInput</servlet-name>
     <jsp-file>/ExtendedDemo.jsp</jsp-file>
 </servlet>
 <servlet-mapping>
     <servlet-name>ExtendedDemoInput</servlet-name>
-    <url-pattern>/ExtendedDemo</url-pattern>   
+    <url-pattern>/ExtendedDemo</url-pattern>
 </servlet-mapping>
 </web-app>

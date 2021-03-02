@@ -1,5 +1,7 @@
 package login;
 
+import util.requestForwarder;
+
 import java.io.IOException;
 
 import javax.servlet.RequestDispatcher;
@@ -18,11 +20,11 @@ public class LoginServlet extends HttpServlet  {
 		String password = request.getParameter("password");
 		boolean valid = ValidateUser.validateUser(username, password);
 		if (valid == true) {
-			RequestDispatcher dispatcher = getServletContext()
-				    .getRequestDispatcher("/WelcomeLogin");
-				    dispatcher.forward(request, response);
+			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/WelcomeLogin");
+			dispatcher.forward(request, response);
 		}
-		response.getWriter().print("Invalid Login.");
-
+		request.setAttribute("InvalidLogin", "Invalid login.");
+		RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/ExtendedDemo");
+		dispatcher.forward(request, response);
 	}
 }

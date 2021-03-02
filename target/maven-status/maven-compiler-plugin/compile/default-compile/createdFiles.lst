@@ -1,5 +1,6 @@
 login/ValidateUser.class
 error/ErrorServlet.class
+login/IsAdmin.class
 login/LoginServlet.class
 error/ErrorHandlerGeneral.class
 cookies/DeleteCookie.class
@@ -8,11 +9,11 @@ session/DeleteSession.class
 listeners/ContextListener.class
 listeners/RequestListener.class
 cookies/CookieSetup.class
-login/TakeInput.class
 demo/FilterInput.class
 util/Home.class
 cookies/EditCookie.class
 session/StartSession.class
+util/requestForwarder.class
 login/ServletFilter.class
 listeners/AttributeTrigger.class
 cookies/CookieInfo.class

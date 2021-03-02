@@ -7,6 +7,13 @@
 <title>Extended Demo</title>
 </head>
 <body>
-
+<form action="LoginServlet" method="GET">
+    Username: <input type="text" name="username">
+    <br/>
+    Password: <input type="password" name="password"/>
+    <br/>
+    <input type="submit" value="Submit"/>
+    <p>${InvalidLogin}</p>
+</form>
 </body>
 </html>

@@ -4,6 +4,7 @@ login/IsAdmin.class
 login/LoginServlet.class
 error/ErrorHandlerGeneral.class
 cookies/DeleteCookie.class
+login/LoginCookie.class
 error/ErrorHandler404.class
 session/DeleteSession.class
 listeners/ContextListener.class
@@ -13,12 +14,11 @@ demo/FilterInput.class
 util/Home.class
 cookies/EditCookie.class
 session/StartSession.class
-util/requestForwarder.class
+login/Logout.class
 login/ServletFilter.class
 listeners/AttributeTrigger.class
 cookies/CookieInfo.class
 util/GetCookie.class
-session/DeleteAttribute.class
 listeners/SessionListener.class
 demo/ErrorMessage.class
 login/WelcomeLogin.class

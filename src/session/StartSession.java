@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 /**
- * Servlet implementation class StartSession
+ * Creates a session if one doesn't exist and sets an initial value
  */
 @WebServlet("/StartSession")
 public class StartSession extends HttpServlet {

@@ -1,28 +1,31 @@
 package login;
 
-import util.requestForwarder;
-
 import java.io.IOException;
 
-import javax.servlet.ServletContext;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.*;
 
+/**
+ * Checks if the user is an admin and redirects them to the appropriate jsp page.
+ */
 @WebServlet("/WelcomeLogin")
 public class WelcomeLogin extends HttpServlet {
-	private static final long serialVersionUID = 1L;
-       
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String username = request.getParameter("username");
-		boolean admin = IsAdmin.checkAdmin(username);
-		if(admin){
-			requestForwarder.forward(request, response, "/AdminHome.jsp");
-		}
-		requestForwarder.forward(request, response, "/UserHome.jsp");
-	}
+    private static final long serialVersionUID = 1L;
+
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String username = request.getParameter("username");
+        boolean isAdmin = IsAdmin.checkAdmin(username);
+        if (isAdmin) {
+            HttpSession session = request.getSession();
+            session.setAttribute("isAdmin", true);
+            RequestDispatcher dispatcher = request.getServletContext().getRequestDispatcher("/AdminHome.jsp");
+            dispatcher.forward(request, response);
+        }
+        RequestDispatcher dispatcher = request.getServletContext().getRequestDispatcher("/UserHome.jsp");
+        dispatcher.forward(request, response);
+    }
 
 
 }

@@ -9,6 +9,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+/**
+ * A servlet to trigger all aspects of the attribute listener and outputting the state in the server logs.
+ */
 @WebServlet("/AttributeTrigger")
 public class AttributeTrigger extends HttpServlet {
 	private static final long serialVersionUID = 1L;

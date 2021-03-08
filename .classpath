@@ -11,12 +11,9 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/home/james/Desktop/PayaraRelease/payara-embedded-all-5.2021.1.RC1.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: javax.servlet:javax.servlet-api:4.0.1"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: javax:javaee-api:8.0.1"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: com.sun.mail:javax.mail:1.6.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: javax.activation:activation:1.1"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

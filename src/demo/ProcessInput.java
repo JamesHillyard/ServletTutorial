@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class ProcessInput
+ * Displays the parameter entered on the page using a printwriter.
  */
 public class ProcessInput extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -21,6 +21,4 @@ public class ProcessInput extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		out.println(name);
 	}
-
-
 }

@@ -8,7 +8,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-
+/**
+ * Edits the current session, overwriting some of the attributes
+ */
 @WebServlet("/EditSession")
 public class EditSession extends HttpServlet{
 

@@ -9,6 +9,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+/**
+ * Creates a cookie with the same name as an existing cookie, overwriting it
+ */
 @WebServlet("/EditCookie")
 public class EditCookie extends HttpServlet {
 	private static final long serialVersionUID = 1L;

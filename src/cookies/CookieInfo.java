@@ -12,6 +12,9 @@ import javax.servlet.http.HttpServletResponse;
 
 import util.GetCookie;
 
+/**
+ * Shows all information about the cookie "basket"
+ */
 @WebServlet("/CookieInfo")
 public class CookieInfo extends HttpServlet {
 	private static final long serialVersionUID = 1L;

@@ -4,6 +4,9 @@ import javax.servlet.annotation.WebListener;
 import javax.servlet.http.HttpSessionEvent;
 import javax.servlet.http.HttpSessionListener;
 
+/**
+ *  Listens for when sessions are created and destroyed and outputs it to the server logs.
+ */
 @WebListener
 public class SessionListener implements HttpSessionListener {
 

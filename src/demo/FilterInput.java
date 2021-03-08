@@ -11,7 +11,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import util.GetCookie;
-
+/**
+ * Checks if the parameter entered ends with a number, if not it filters the request, otherwise directs to the ErrorMessage servlet
+ */
 public class FilterInput implements Filter {
 	public void init(FilterConfig filterConfig) throws ServletException {
     }

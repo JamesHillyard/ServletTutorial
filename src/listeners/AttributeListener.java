@@ -4,6 +4,9 @@ import javax.servlet.ServletContextAttributeEvent;
 import javax.servlet.ServletContextAttributeListener;
 import javax.servlet.annotation.WebListener;
 
+/**
+ * A web listener that watches servlets for when attributes are added, modified and deleted, outputting them to the server log.
+ */
 @WebListener
 public class AttributeListener implements ServletContextAttributeListener {
 

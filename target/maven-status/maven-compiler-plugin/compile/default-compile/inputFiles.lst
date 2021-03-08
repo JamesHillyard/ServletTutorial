@@ -6,11 +6,11 @@
 /home/james/IdeaProjects/ServletTutorial/src/listeners/ContextListener.java
 /home/james/IdeaProjects/ServletTutorial/src/login/ValidateUser.java
 /home/james/IdeaProjects/ServletTutorial/src/error/ErrorHandlerGeneral.java
-/home/james/IdeaProjects/ServletTutorial/src/session/DeleteAttribute.java
 /home/james/IdeaProjects/ServletTutorial/src/demo/ProcessInput.java
 /home/james/IdeaProjects/ServletTutorial/src/listeners/RequestListener.java
 /home/james/IdeaProjects/ServletTutorial/src/listeners/SessionListener.java
 /home/james/IdeaProjects/ServletTutorial/src/cookies/DeleteCookie.java
+/home/james/IdeaProjects/ServletTutorial/src/login/LoginCookie.java
 /home/james/IdeaProjects/ServletTutorial/src/login/ServletFilter.java
 /home/james/IdeaProjects/ServletTutorial/src/demo/ErrorMessage.java
 /home/james/IdeaProjects/ServletTutorial/src/demo/FilterInput.java
@@ -20,7 +20,7 @@
 /home/james/IdeaProjects/ServletTutorial/src/util/GetCookie.java
 /home/james/IdeaProjects/ServletTutorial/src/listeners/AttributeTrigger.java
 /home/james/IdeaProjects/ServletTutorial/src/cookies/EditCookie.java
-/home/james/IdeaProjects/ServletTutorial/src/util/requestForwarder.java
+/home/james/IdeaProjects/ServletTutorial/src/login/Logout.java
 /home/james/IdeaProjects/ServletTutorial/src/session/DeleteSession.java
 /home/james/IdeaProjects/ServletTutorial/src/login/WelcomeLogin.java
 /home/james/IdeaProjects/ServletTutorial/src/error/ErrorHandler404.java

@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 /**
- * Servlet implementation class DeleteSession
+ * Invalidates the session, deleting all attributes and session data
  */
 @WebServlet("/DeleteSession")
 public class DeleteSession extends HttpServlet {

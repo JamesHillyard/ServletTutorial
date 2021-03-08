@@ -3,6 +3,9 @@ package util;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 
+/**
+ * A utility method to get a specific cookie by name
+ */
 public class GetCookie {
 
 	public static Cookie getCookie(HttpServletRequest request, String name) {

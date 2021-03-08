@@ -9,6 +9,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+/**
+ * Deletes the "Basket" cookie by setting its max age to 0
+ */
 @WebServlet("/DeleteCookie")
 public class DeleteCookie extends HttpServlet {
 	private static final long serialVersionUID = 1L;

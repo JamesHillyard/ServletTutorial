@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class Cookie
+ * Create as a new cookie named "Basket" with the value "Bread"
  */
 @WebServlet("/CreateCookie")
 public class CookieSetup extends HttpServlet {

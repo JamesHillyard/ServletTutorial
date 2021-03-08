@@ -13,7 +13,10 @@
     Password: <input type="password" name="password"/>
     <br/>
     <input type="submit" value="Submit"/>
-    <p>${InvalidLogin}</p>
 </form>
+<form action="LoginCookie" method = "GET">
+    <input type="submit" value="LoginWithCookie"/>
+</form>
+<p>${InfoMessage}</p>
 </body>
 </html>

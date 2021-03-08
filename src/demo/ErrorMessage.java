@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class ErrorMessage
+ * Sets the error message attribute and directs back to the starting input page
  */
 public class ErrorMessage extends HttpServlet {
 	private static final long serialVersionUID = 1L;

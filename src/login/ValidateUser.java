@@ -1,5 +1,11 @@
 package login;
 
+import java.util.ArrayList;
+
+/**
+ * A simple Java class which takes the entered username and password, checks it against static values and returns
+ * true or false, depending if they are valid.
+ */
 public class ValidateUser {
 
 	public static boolean validateUser(String username, String password) {

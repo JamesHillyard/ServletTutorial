@@ -4,6 +4,9 @@ import javax.servlet.ServletRequestEvent;
 import javax.servlet.ServletRequestListener;
 import javax.servlet.annotation.WebListener;
 
+/**
+ *  Listens for servlet requests being destroyed and created and outputs it to the server log.
+ */
 @WebListener
 public class RequestListener implements ServletRequestListener {
        

@@ -3,9 +3,12 @@ package listeners;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
-import java.sql.SQLException;
-import java.sql.DriverManager;
-import java.sql.Connection;
+
+/**
+ *  A web listener which triggers when the web servlet lifecycle changes
+ *  - Initialized will happen before any servlets or filters are initialized
+ *  - Destroyed will happen after all servlets and filters have been destroyed
+ */
 
 @WebListener
 public class ContextListener implements ServletContextListener {

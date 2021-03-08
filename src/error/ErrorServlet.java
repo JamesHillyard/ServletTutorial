@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class ErrorServlet
+ * Forces a 500 error for demonstration purposes
  */
 @WebServlet("/Error")
 public class ErrorServlet extends HttpServlet {

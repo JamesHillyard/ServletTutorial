@@ -7,13 +7,13 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class ErrorHandler
+ * Catches any 404 errors (as declared in the web.xml) and comes to this servlet where the user is redirected to a HTML page
  */
 public class ErrorHandler404 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.getWriter().write("<h2> 404 error, page not found. </h2> \n");
+		response.sendRedirect("/404ErrorPage.html");
 	}
 
 }

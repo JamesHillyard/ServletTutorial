@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
-  <servlet>
-    <description></description>
-    <display-name>Display</display-name>
-    <servlet-name>Display</servlet-name>
-    <servlet-class>util.Display</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>Display</servlet-name>
-    <url-pattern>/Display</url-pattern>
-  </servlet-mapping>
   <display-name>DeployApp</display-name>
   <welcome-file-list>
     <welcome-file>Home.html</welcome-file>
@@ -44,14 +34,6 @@
     <servlet-name>ErrorServlet</servlet-name>
     <url-pattern>/ErrorServlet</url-pattern>
   </servlet-mapping>
-  <error-page>
-    <error-code>404</error-code>
-    <location>/ErrorHandler</location>
-  </error-page>
-  <error-page>
-    <exception-type>java.lang.Throwable</exception-type>
-    <location>/ErrorHandlerGeneral</location>
-  </error-page>
   <filter>
     <filter-name>ServletFilter</filter-name>
     <filter-class>login.ServletFilter</filter-class>
@@ -136,4 +118,12 @@
     <servlet-name>ExtendedDemoInput</servlet-name>
     <url-pattern>/ExtendedDemo</url-pattern>
 </servlet-mapping>
+  <error-page>
+    <error-code>404</error-code>
+    <location>/ErrorHandler</location>
+  </error-page>
+  <error-page>
+    <exception-type>java.lang.Throwable</exception-type>
+    <location>/ErrorHandlerGeneral</location>
+  </error-page>
 </web-app>

@@ -30,7 +30,7 @@ public class LoginServlet extends HttpServlet {
             RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/WelcomeLogin");
             dispatcher.forward(request, response);
         }
-        request.setAttribute("InfoMessage", "Invalid extendedDemo.");
+        request.setAttribute("InfoMessage", "Invalid login.");
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/ExtendedDemo");
         dispatcher.forward(request, response);
     }

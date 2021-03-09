@@ -1,4 +1,4 @@
-package login;
+package extendedDemo;
 
 import java.io.IOException;
 

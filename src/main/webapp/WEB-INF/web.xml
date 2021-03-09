@@ -4,8 +4,8 @@
   <welcome-file-list>
     <welcome-file>Home.html</welcome-file>
   </welcome-file-list>
+  <!-- Declares all servlets in package 'Error' as web servlets -->
   <servlet>
-    <description></description>
     <display-name>ErrorHandler</display-name>
     <servlet-name>ErrorHandler</servlet-name>
     <servlet-class>error.ErrorHandler404</servlet-class>
@@ -32,48 +32,9 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>ErrorServlet</servlet-name>
-    <url-pattern>/ErrorServlet</url-pattern>
+    <url-pattern>/Error</url-pattern>
   </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>Sessions</display-name>
-    <servlet-name>Sessions</servlet-name>
-    <servlet-class>cookies.CookieInfo</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>Sessions</servlet-name>
-    <url-pattern>/Sessions</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>Cookie</display-name>
-    <servlet-name>Cookie</servlet-name>
-    <servlet-class>cookies.CookieSetup</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>Cookie</servlet-name>
-    <url-pattern>/Cookie</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>ProcessInput</display-name>
-    <servlet-name>ProcessInput</servlet-name>
-    <servlet-class>demo.ProcessInput</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>ProcessInput</servlet-name>
-    <url-pattern>/ProcessInput</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>FilterInput</display-name>
-    <servlet-name>FilterInput</servlet-name>
-    <servlet-class>demo.FilterInput</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>FilterInput</servlet-name>
-    <url-pattern>/FilterInput</url-pattern>
-  </servlet-mapping>
+  <!-- Declares FilterInput in package 'demo' as a filter for anything going to '/ProcessInput' -->
   <filter>
     <filter-name>FilterInput</filter-name>
     <filter-class>demo.FilterInput</filter-class>
@@ -82,43 +43,16 @@
     <filter-name>FilterInput</filter-name>
     <url-pattern>/ProcessInput</url-pattern>
   </filter-mapping>
+  <!-- Maps /ExtendedDemo.jsp to just /ExtendedDemo -->
   <servlet>
-    <description></description>
-    <display-name>ErrorMessage</display-name>
-    <servlet-name>ErrorMessage</servlet-name>
-    <servlet-class>demo.ErrorMessage</servlet-class>
+      <servlet-name>ExtendedDemoInput</servlet-name>
+      <jsp-file>/ExtendedDemo.jsp</jsp-file>
   </servlet>
   <servlet-mapping>
-    <servlet-name>ErrorMessage</servlet-name>
-    <url-pattern>/ErrorMessage</url-pattern>
+      <servlet-name>ExtendedDemoInput</servlet-name>
+      <url-pattern>/ExtendedDemo</url-pattern>
   </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>CookieInfoRemastered</display-name>
-    <servlet-name>CookieInfoRemastered</servlet-name>
-    <servlet-class>cookies.CookieInfo</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>CookieInfoRemastered</servlet-name>
-    <url-pattern>/CookieInfoRemastered</url-pattern>
-  </servlet-mapping>
-<servlet>
-    <servlet-name>ExtendedDemoInput</servlet-name>
-    <jsp-file>/ExtendedDemo.jsp</jsp-file>
-</servlet>
-<servlet-mapping>
-    <servlet-name>ExtendedDemoInput</servlet-name>
-    <url-pattern>/ExtendedDemo</url-pattern>
-</servlet-mapping>
-
-  <filter>
-    <filter-name>ServletFilter</filter-name>
-    <filter-class>login.ServletFilter</filter-class>
-  </filter>
-  <filter-mapping>
-    <filter-name>ServletFilter</filter-name>
-    <url-pattern>/LoginServlet</url-pattern>
-  </filter-mapping>
+  <!-- Catches errors 404 and java.lang.Throwable and pairs them to a servlet should the error occur -->
   <error-page>
     <error-code>404</error-code>
     <location>/ErrorHandler</location>

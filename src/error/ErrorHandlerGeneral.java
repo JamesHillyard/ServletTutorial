@@ -16,8 +16,9 @@ public class ErrorHandlerGeneral extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Integer statusCode = (Integer) request.getAttribute("javax.servlet.error.status_code");
-        request.setAttribute("ErrorCode", statusCode);
-
+        if(statusCode != null){
+            request.setAttribute("ErrorCode", statusCode);
+        }
         RequestDispatcher dispatcher = request.getServletContext().getRequestDispatcher("/GeneralErrorPage.jsp");
         dispatcher.forward(request, response);
     }

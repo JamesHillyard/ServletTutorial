@@ -17,7 +17,7 @@ public class EditCookie extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		Cookie basket = new Cookie("Basket", "Milk");
+		Cookie basket = new Cookie("Basket", "Milk, Sugar, Coffee");
 		basket.setMaxAge(60);
 		response.addCookie(basket);
 		response.sendRedirect("/CookieInfo");

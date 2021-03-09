@@ -17,6 +17,7 @@ public class StartSession extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session = request.getSession();
+		session.setMaxInactiveInterval(1000);
 		session.setAttribute("adminPassword", "Pa$$word1");
     	response.sendRedirect("SessionValues.jsp");
 	}

@@ -1,4 +1,4 @@
-package login;
+package extendedDemo;
 
 import java.io.IOException;
 
@@ -30,7 +30,7 @@ public class LoginServlet extends HttpServlet {
             RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/WelcomeLogin");
             dispatcher.forward(request, response);
         }
-        request.setAttribute("InfoMessage", "Invalid login.");
+        request.setAttribute("InfoMessage", "Invalid extendedDemo.");
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/ExtendedDemo");
         dispatcher.forward(request, response);
     }

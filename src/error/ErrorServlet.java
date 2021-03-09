@@ -10,7 +10,6 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Forces a 500 error for demonstration purposes
  */
-@WebServlet("/Error")
 public class ErrorServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 

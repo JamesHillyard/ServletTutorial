@@ -1,4 +1,4 @@
-package login;
+package extendedDemo;
 
 import javax.servlet.*;
 import javax.servlet.http.*;

@@ -3,6 +3,7 @@ package cookies;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.Cookie;
@@ -25,10 +26,10 @@ public class CookieInfo extends HttpServlet {
 		PrintWriter writer = response.getWriter();
 		writer.println("Name: "+currentCookie.getName());
 		writer.println("Data: "+currentCookie.getValue());
-		writer.println("Max Age: "+currentCookie.getMaxAge());
 		} catch (Exception ex) {
-			PrintWriter writer = response.getWriter();
-			writer.write("Something happened: \n"+ex.toString());
+			request.setAttribute("ErrorCode", ex);
+			RequestDispatcher dispatcher = request.getServletContext().getRequestDispatcher("/ErrorHandlerGeneral");
+			dispatcher.forward(request, response);
 		}
 	}
 
